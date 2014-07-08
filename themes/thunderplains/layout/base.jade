@@ -1,0 +1,27 @@
+doctype html
+block vars
+  - var bodyclass = null;
+html(lang='en')
+  head
+    include _partial/head
+  body(class=bodyclass)
+    div.container
+      div#page_head
+        block header
+          h2
+            = config.subtitle
+          h1
+            a(href=config.root)
+              = config.title
+      div.row
+        nav#topnav.navbar.navbar-default(role='navigation')
+          ul.nav.navbar-nav
+            li
+              a(href=config.root) Home
+            li
+              a(href='/docs/api') Documentation
+
+      section#page_content
+        block content
+      footer#page_foot
+        include _partial/footer
