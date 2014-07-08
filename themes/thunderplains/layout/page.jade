@@ -6,7 +6,6 @@ prepend window_title
    &mdash;
 
 append content
-  article
-    h2= page.title
+  .page(class=page.layout)
 
     != page.content

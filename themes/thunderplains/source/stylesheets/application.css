@@ -4377,6 +4377,7 @@ header {
   header h2 {
     font-family: "Sanchez", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 50px;
+    text-transform: uppercase;
     line-height: 60px;
     margin-bottom: 0; }
     @media only screen and (max-width: 768px) {
@@ -4385,6 +4386,7 @@ header {
         line-height: 30px; } }
   header h3 {
     font-family: "Sanchez", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
     font-size: 30px;
     line-height: 40px; }
     @media only screen and (max-width: 768px) {
@@ -4422,7 +4424,8 @@ header {
         header nav ul {
           display: none; } }
     header nav a, header nav a:hover {
-      color: white; }
+      color: white;
+      text-transform: uppercase; }
   header .scroll-hint {
     margin: 0 auto;
     display: block;

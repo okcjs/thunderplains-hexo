@@ -36,67 +36,13 @@ html(lang='en')
               li.col-md-1 &#160;
               li
             a.scroll-hint(href="#conference")
+
     #content
-      section#conference.container
-        h2.section-title Developer Conference
-        p
-          strong Thunder Plains
-          | is a web and mobile developer conference organized by the
-          a(href="http://okcjs.com") Oklahoma City Javascript User Group
-          | . The conference
-          | focuses on JavaScript and related technologies in a wide variety of different use cases and
-          | platforms that make the web all the more interesting.
-          br
-          ul.speakers-topics.row
-            li.speakers-topics-js.col-sm-2.col-sm-offset-1.col-xs-4
-              | Javascript
-              img(src="images/speakers-topics-js.png", alt="Javascript")
-            li.speakers-topics-html.col-sm-2.col-xs-4
-              | HTML
-              img(src="images/speakers-topics-html.png", alt="HTML")
-            li.speakers-topics-css.col-sm-2.col-xs-4
-              | CSS
-              img(src="images/speakers-topics-css.png", alt="CSS")
-            li.speakers-topics-api.col-sm-2.col-xs-4
-              | APIs
-              img(src="images/speakers-topics-api.png", alt="APIs")
-            li.speakers-topics-mobile.col-sm-2.col-xs-4
-              | Mobile
-              img(src="images/speakers-topics-mobile.png", alt="Mobile")
-      #callforpapers
-        section.container
-          h2.section-title Call For Papers
-          p
-            strong Our call for papers is closed and we are currently making talk selections.
-          p Hang in there, choosing from all these great talk proposals is hard work!
-      section#coc
-        .container
-          h2.section-title Code of Conduct
-          p
-            | Before attending the conference,
-            a(href="http://confcodeofconduct.com") please review Thunder Plains" Code of Conduct
-            | . The CoC applies to all attendees, speakers, volunteers, and vendors at official and unofficial events by Thunder Plains and any location where attendees may be congregating.
-            a(href="mailto:info@thunderplainsconf.com") Contact us
-            | if you have questions about the COC.
-          br
-          p
-            | Our conference is a safe learning environment for everyone. The safety and well-being of attendees and others is our utmost concern, so please speak up and speak out. We"re here for you.
-      section#location
-        .container
-          h2.section-title Where it&#8217;s at
-          p
-            | Located at the
-            a(href="http://www.coxconventioncenter.com/") Cox Convention Center
-            | in downtown Oklahoma City
-            br
-            | within walking distance of great hotels and restaurants
-        #map
+      block content
+
     footer
-      a.siteby(href="http://brightbit.com")
-        | Site by
-        span.logo-brightbit Brightbit
-      p.past-years
-        a(href="http://2013.thunderplainsconf.com") View 2013 Website
+      include _partial/footer
+
     // Modal
     #modal-talks.modal(tabindex="-1", role="dialog", aria-labelledby="myModalLabel", aria-hidden="true")
       .modal-dialog
@@ -104,6 +50,7 @@ html(lang='en')
           .modal-header
             button.close(type="button", data-dismiss="modal", aria-hidden="true") &#215;
           .modal-body
+
     script.
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -114,21 +61,3 @@ html(lang='en')
     script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvbTld6AHZj_PbND6ZysGns9kXb5BBNi0&sensor=false")
     script(src="javascripts/retina.js", type="text/javascript")
 
-
-
-
-
-    div.container
-      div#page_head
-      div.row
-        nav#topnav.navbar.navbar-default(role='navigation')
-          ul.nav.navbar-nav
-            li
-              a(href=config.root) Home
-            li
-              a(href='/docs/api') Documentation
-
-      section#page_content
-        block content
-      footer#page_foot
-        include _partial/footer
