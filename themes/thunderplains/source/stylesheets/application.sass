@@ -375,7 +375,7 @@ header
         margin-right: -40px
 
       .pass-title, .pass-price
-        padding: 60px
+        padding: 40px 60px
         height: 160px
         @media only screen and (max-width: $break-small)
           height: 80px
@@ -397,6 +397,7 @@ header
             margin-bottom: 0
 
       .pass-price
+        padding: 60px
         background: $purple-light
         color: white
         text-transform: uppercase
@@ -410,11 +411,19 @@ header
           font-size: .5em
           top: -0.7em
           text-decoration: underline
+      &.pass-lightning .pass-price
+        background: mix($orange, white, 65%)
+      &.pass-thunder .pass-price
+        background: $orange
+      &.pass-rain .pass-price
+        background: mix($purple-dark, white, 70%)
       &.pass-earlybird .pass-price
         background: $orange
       &.pass-onsite .pass-price
         background: $purple-dark
       &.pass-students .pass-price
+        background: mix($blue-dark, white, 70%)
+      &.pass-bulk .pass-price
         background: $blue-dark
 
       &.soldout
@@ -429,8 +438,12 @@ header
             line-height: 30px
 
 
-        &.pass-earlybird .pass-price
-          color: mix($orange, white)
+        &.pass-lightning .pass-price
+          color: mix($orange, white, 25%)
+        &.pass-thunder .pass-price
+          color: mix($orange, white, 45%)
+        &.pass-rain .pass-price
+          color: mix($orange, white, 65%)
         &.pass-onsite .pass-price
           color: mix($purple-dark, white)
         &.pass-students .pass-price

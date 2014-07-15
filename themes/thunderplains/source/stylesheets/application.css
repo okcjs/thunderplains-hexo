@@ -4621,7 +4621,7 @@ header {
       right: 0;
       margin-right: -40px; }
     #passes .passes-list li .pass-title, #passes .passes-list li .pass-price {
-      padding: 60px;
+      padding: 40px 60px;
       height: 160px; }
       @media only screen and (max-width: 768px) {
         #passes .passes-list li .pass-title, #passes .passes-list li .pass-price {
@@ -4643,6 +4643,7 @@ header {
             display: block;
             margin-bottom: 0; } }
     #passes .passes-list li .pass-price {
+      padding: 60px;
       background: #b27d97;
       color: white;
       text-transform: uppercase;
@@ -4657,11 +4658,19 @@ header {
         font-size: 0.5em;
         top: -0.7em;
         text-decoration: underline; }
+    #passes .passes-list li.pass-lightning .pass-price {
+      background: #eed6c1; }
+    #passes .passes-list li.pass-thunder .pass-price {
+      background: #e5c1a0; }
+    #passes .passes-list li.pass-rain .pass-price {
+      background: #857e93; }
     #passes .passes-list li.pass-earlybird .pass-price {
       background: #e5c1a0; }
     #passes .passes-list li.pass-onsite .pass-price {
       background: #524866; }
     #passes .passes-list li.pass-students .pass-price {
+      background: #6c7379; }
+    #passes .passes-list li.pass-bulk .pass-price {
       background: #2d3740; }
     #passes .passes-list li.soldout .pass-title {
       color: #dad6ce; }
@@ -4673,8 +4682,12 @@ header {
         #passes .passes-list li.soldout .pass-price {
           font-size: 30px;
           line-height: 30px; } }
-    #passes .passes-list li.soldout.pass-earlybird .pass-price {
-      color: #f2e0cf; }
+    #passes .passes-list li.soldout.pass-lightning .pass-price {
+      color: #f8efe7; }
+    #passes .passes-list li.soldout.pass-thunder .pass-price {
+      color: #f3e3d4; }
+    #passes .passes-list li.soldout.pass-rain .pass-price {
+      color: #eed6c1; }
     #passes .passes-list li.soldout.pass-onsite .pass-price {
       color: #a8a3b2; }
     #passes .passes-list li.soldout.pass-students .pass-price {
