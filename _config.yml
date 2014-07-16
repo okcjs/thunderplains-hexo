@@ -88,6 +88,6 @@ exclude_generator:
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
   type: github
-  repo: git@github.com:vlucas/thunderplains-site.git
+  repo: git@github.com:okcjs/thunderplains-hexo.git
   branch: gh-pages
 
