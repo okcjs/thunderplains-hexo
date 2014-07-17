@@ -4501,9 +4501,11 @@ header {
       width: 1em;
       vertical-align: middle;
       margin: -0.2em 0.5em 0 0; }
-    #schedule .schedule-legend span.legend-largeroom:before {
+    #schedule .schedule-legend span.legend-room1:before {
+      background: #524866; }
+    #schedule .schedule-legend span.legend-room2:before {
       background: #b27d97; }
-    #schedule .schedule-legend span.legend-smallroom:before {
+    #schedule .schedule-legend span.legend-room3:before {
       background: #e5c1a0; }
 #schedule .schedule-list {
   border: 1px solid #f2ece4;
@@ -4544,9 +4546,11 @@ header {
     cursor: pointer;
     border-left: 5px solid #f2ece4;
     padding: 15px 20px 15px 10px; }
-    #schedule .schedule-list .schedule-talk.schedule-largeroom {
+    #schedule .schedule-list .schedule-talk.schedule-room1 {
+      border-left-color: #524866; }
+    #schedule .schedule-list .schedule-talk.schedule-room2 {
       border-left-color: #b27d97; }
-    #schedule .schedule-list .schedule-talk.schedule-smallroom {
+    #schedule .schedule-list .schedule-talk.schedule-room3 {
       border-left-color: #e5c1a0; }
     #schedule .schedule-list .schedule-talk.no-modal {
       cursor: default; }
@@ -4555,7 +4559,7 @@ header {
   @media only screen and (min-width: 992px) {
     #schedule .schedule-list .schedule-slot .schedule-talk {
       float: left;
-      width: 50%;
+      width: 33.3%;
       height: 90px; } }
 
 .schedule-talk .schedule-title h3 {
@@ -5009,3 +5013,6 @@ footer {
   background: #2d3740; }
   .modal-backdrop.in {
     opacity: 0.8; }
+
+.tinytext {
+  font-size: 0.6em; }

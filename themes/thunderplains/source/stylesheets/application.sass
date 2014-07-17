@@ -243,9 +243,11 @@ header
         width: 1em
         vertical-align: middle
         margin: -.2em .5em 0 0
-      &.legend-largeroom:before
+      &.legend-room1:before
+        background: $purple-dark
+      &.legend-room2:before
         background: $purple-light
-      &.legend-smallroom:before
+      &.legend-room3:before
         background: $orange
   .schedule-list
     @extend .list-simple
@@ -292,9 +294,11 @@ header
       cursor: pointer
       border-left: 5px solid $creme
       padding: 15px 20px 15px  10px
-      &.schedule-largeroom
+      &.schedule-room1
+        border-left-color: $purple-dark
+      &.schedule-room2
         border-left-color: $purple-light
-      &.schedule-smallroom
+      &.schedule-room3
         border-left-color: $orange
       &.no-modal
         cursor: default
@@ -304,7 +308,7 @@ header
       .schedule-slot
         .schedule-talk
           float: left
-          width: 50%
+          width: 33.3%
           height: 90px
 
 .schedule-talk
@@ -563,3 +567,7 @@ footer
   background: $blue-dark
   &.in
     opacity: 0.8
+
+.tinytext
+  font-size: 0.6em
+

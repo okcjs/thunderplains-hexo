@@ -29,31 +29,196 @@ section#conference.container
         | Mobile
         img(src="images/speakers-topics-mobile.png", alt="Mobile")
 
-#schedule
-  section.container
-    h2.section-title Schedule
-    p
-      strong Our schedule will be posted very soon.
-    p
-      | All of our talks have been selected, and we are awaiting final
-      | confirmation from a few of our speakers
+section#schedule.container
+  h2.section-title Schedule
+  .schedule-legend
+    span.legend-room1 Room 1
+    span.legend-room2 Room 2
+    span.legend-room3 Room 3
 
-section#coc
-  .container
-    h2.section-title Code of Conduct
-    p
-      | Before attending the conference, 
-      a(href="http://confcodeofconduct.com") please review the Thunder Plains Code of Conduct
-      | . The CoC applies to all attendees, speakers, volunteers, and vendors
-      | at official and unofficial events by Thunder Plains and any location
-      | where attendees may be congregating. 
-      a(href="mailto:info@thunderplainsconf.com") Contact us
-      |  if you have questions about the COC.
-    br
-    p
-      | Our conference is a safe learning environment for everyone. The safety
-      | and well-being of attendees and others is our utmost concern, so please
-      | speak up and speak out. We're here for you.
+  .schedule-list
+    .schedule-time
+      time 8:00am-8:30am
+    .schedule-event
+      p
+        | Registration
+
+    .schedule-time
+      time 8:30am-9:00am
+    .schedule-event
+      p
+        | Opening Announcements
+
+    .schedule-time
+      time 9:00am-9:30am
+    .schedule-keynote
+      p Opening Keynote
+      .schedule-talk.no-modal
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="Luke Crouch")
+          h3
+            | Web For America
+          h4 Luke Crouch
+
+    .schedule-time
+      time 9:30am-10:20am
+    .schedule-slot
+      .schedule-talk.schedule-room1
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Real World React.js
+          h4 Aaron Murray
+        p
+          | Talk Description
+      .schedule-talk.schedule-room2
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Genome.js
+          h4 Eric Schoffstall
+        p
+          | Talk Description
+      .schedule-talk.schedule-room3
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Building Massive Angular Apps
+          h4 Gordon Bockus
+        p
+          | Talk Description
+
+    .schedule-time
+      time 10:30am-11:20am
+    .schedule-slot
+      .schedule-talk.schedule-room1
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Making Magic with Node.js and Redis
+          h4 Waylon Flinn
+        p
+          | Talk Description
+      .schedule-talk.schedule-room2
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Your Grandparents Probably Didn't Have Node
+          h4 Jenn Schiffer
+        p
+          | Talk Description
+      .schedule-talk.schedule-room3
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Server-less dashboards powered by Web Components
+          h4 Sebastien Cevey
+        p
+          | Talk Description
+
+    .schedule-time
+      time 11:30pm-1:00pm
+    .schedule-event
+      p
+        | Lunch Break
+
+    .schedule-time
+      time 1:00pm-1:50pm
+    .schedule-slot
+      .schedule-talk.schedule-room1
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Mobile Applications with Javascript and Ionic
+          h4 Josh Bavari
+        p
+          | Talk Description
+      .schedule-talk.schedule-room2
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Leveraging Hypermedia to Build Rich Applications
+          h4 Sebastian Cevey
+        p
+          | Talk Description
+      .schedule-talk.schedule-room3
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Johnny Five is Alive
+          h4 Dereck Bailey
+        p
+          | Talk Description
+
+    .schedule-time
+      time 2:00pm-2:50pm
+    .schedule-slot
+      .schedule-talk.schedule-room1
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Use Your Words!
+          h4 Tracy Hinds
+        p
+          | Talk Description
+      .schedule-talk.schedule-room2
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Supercharge Your Productivity with Ember.js
+          h4 Jeremy Green
+        p
+          | Talk Description
+      .schedule-talk.schedule-room3
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 Better Living through Control Flow Graph Generation
+          h4 Chris Dickenson
+        p
+          | Talk Description
+
+    .schedule-time
+      time 3:00pm-3:30pm
+    .schedule-event
+      p
+        | Break
+
+    .schedule-time
+      time 3:30pm-4:20pm
+    .schedule-slot
+      .schedule-talk.schedule-room1
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 NodeBots Wearables: JavaScripting Your Wardrobe
+          h4 Kassandra
+        p
+          | Talk Description
+      .schedule-talk.schedule-room2
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 So tell me again why we're not using node.js?
+          h4 Jordan Rousseau
+        p
+          | Talk Description
+      .schedule-talk.schedule-room3
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="")
+          h3 The Importance of Building Developer Communities
+          h4 Jennifer Wadella
+        p
+          | Talk Description
+
+    .schedule-time
+      time 4:30pm-5:20pm
+    .schedule-keynote
+      p Closing Keynote
+      .schedule-talk.no-modal
+        .schedule-title
+          img(src="images/speakers/tba.png", alt="Chris Williams")
+          h3
+            | Democratizing Hardware
+          h4 Chris Williams
+
+    .schedule-time
+      time 5:30pm-6:00pm
+    .schedule-event
+      p
+        | Closing Remarks &amp; Prize Drawing
+
+    .schedule-time
+      time 6:30pm - ?
+    .schedule-event
+      p
+        | After Party (Off-site)
 
 section#passes.container
   h2.section-title Passes
@@ -121,6 +286,23 @@ section#passes.container
         .pass-price.col-md-4
           | $100
           sup 00/ea
+
+section#coc
+  .container
+    h2.section-title Code of Conduct
+    p
+      | Before attending the conference, 
+      a(href="http://confcodeofconduct.com") please review the Thunder Plains Code of Conduct
+      | . The CoC applies to all attendees, speakers, volunteers, and vendors
+      | at official and unofficial events by Thunder Plains and any location
+      | where attendees may be congregating. 
+      a(href="mailto:info@thunderplainsconf.com") Contact us
+      |  if you have questions about the COC.
+    br
+    p
+      | Our conference is a safe learning environment for everyone. The safety
+      | and well-being of attendees and others is our utmost concern, so please
+      | speak up and speak out. We're here for you.
 
 section#location
   .container
