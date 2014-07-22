@@ -4543,7 +4543,7 @@ header {
       #schedule .schedule-list .schedule-keynote .schedule-talk .schedule-title h4 {
         font-size: 20px; }
   #schedule .schedule-list .schedule-talk {
-    cursor: pointer;
+    cursor: default;
     border-left: 5px solid #f2ece4;
     padding: 15px 20px 15px 10px; }
     #schedule .schedule-list .schedule-talk.schedule-room1 {
@@ -4554,6 +4554,8 @@ header {
       border-left-color: #e5c1a0; }
     #schedule .schedule-list .schedule-talk.no-modal {
       cursor: default; }
+    #schedule .schedule-list .schedule-talk.schedule-cursor-pointer {
+      cursor: pointer; }
     #schedule .schedule-list .schedule-talk img, #schedule .schedule-list .schedule-talk p {
       display: none; }
   @media only screen and (min-width: 992px) {

@@ -291,7 +291,7 @@ header
           h4
             font-size: 20px
     .schedule-talk
-      cursor: pointer
+      cursor: default
       border-left: 5px solid $creme
       padding: 15px 20px 15px  10px
       &.schedule-room1
@@ -302,6 +302,8 @@ header
         border-left-color: $orange
       &.no-modal
         cursor: default
+      &.schedule-cursor-pointer
+        cursor: pointer
       img, p
         display: none
     @media only screen and (min-width: $break-medium)

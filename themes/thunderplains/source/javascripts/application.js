@@ -1,5 +1,6 @@
 $(function() {
   initializeMap();
+  addCursorPointer();
 
   // Smooth Scroll
   $('a[href*=#]:not([href=#])').click(function() {
@@ -24,6 +25,10 @@ $(function() {
   });
 
 });
+
+function addCursorPointer() {
+  $('.schedule-talk').addClass('schedule-cursor-pointer');
+}
 
 // Map
 function initializeMap() {
