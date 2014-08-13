@@ -4707,6 +4707,8 @@ header {
     @media only screen and (min-width: 768px) {
       #sponsors .sponsors-list .row {
         margin-bottom: 1em; } }
+    #sponsors .sponsors-list .sponsor img {
+      max-width: 250px; }
     @media only screen and (max-width: 768px) {
       #sponsors .sponsors-list .sponsor {
         margin-bottom: 20px; } }
@@ -4812,3 +4814,13 @@ footer {
 
 .tinytext {
   font-size: 0.6em; }
+
+.vcenter div[class*='col-'] {
+  display: inline-block;
+  vertical-align: middle;
+  float: none; }
+.vcenter img {
+  max-width: 250px; }
+
+.sponsor img {
+  max-width: 250px; }

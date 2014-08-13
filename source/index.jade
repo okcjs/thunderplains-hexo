@@ -347,7 +347,12 @@ section#schedule.container
       time 6:30pm - ?
     .schedule-event
       p
-        | After Party (Off-site)
+        | After Party (Off-site) - Sponsored by
+        a(href="http://mandrill.com/")
+          |  Mandrill
+      p.sponsor
+        a.logo(href="http://mandrill.com/")
+          img(alt="Mandrill" src="images/logo-mandrill.png")
 
 section#passes.container
   h2.section-title Passes
@@ -447,11 +452,15 @@ section#location
 section#sponsors.container
   h2.section-title With help from these fine folks
   .sponsors-list
-    .row
+    .row.vcenter
       .sponsor
-        h2 Lunch Sponsor
-        a.logo(href="http://www.sstsoftware.com/")
-          img(alt="SST Software" src="images/logo-sst.png")
+        h2 Gold Sponsors
+        .col-md-3.col-lg-3
+          a.logo(href="http://www.sstsoftware.com/")
+            img(alt="SST Software" src="images/logo-sst.png")
+        .col-md-3.col-lg-3
+          a.logo(href="http://mandrill.com/")
+            img(alt="Mandrill" src="images/logo-mandrill.png")
     br
     .row
       .sponsor

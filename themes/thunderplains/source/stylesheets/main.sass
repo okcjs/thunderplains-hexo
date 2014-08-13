@@ -467,6 +467,9 @@ header
         margin-bottom: 1em
 
     .sponsor
+      img
+        max-width: 250px
+
       @media only screen and (max-width: $break-small)
         margin-bottom: 20px
 
@@ -571,3 +574,15 @@ footer
 .tinytext
   font-size: 0.6em
 
+.vcenter
+  div[class*='col-']
+    display: inline-block
+    vertical-align: middle
+    float: none
+
+  img
+    max-width: 250px
+
+.sponsor
+  img
+    max-width: 250px
