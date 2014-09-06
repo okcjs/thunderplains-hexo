@@ -93,4 +93,5 @@ deploy:
   type: github
   repo: git@github.com:okcjs/thunderplains-hexo.git
   branch: gh-pages
+  ignore_errors: true
 
