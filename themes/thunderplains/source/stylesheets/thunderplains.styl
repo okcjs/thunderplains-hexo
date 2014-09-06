@@ -256,6 +256,13 @@ header
       background: mix(white, $background)
       text-align: center
       border-left: 5px solid $purple-light
+      transition: all $hoverReactSpeed linear                                     
+      &:hover
+          border-left-color: saturate($purple-light, $hoverSaturate)
+          background-color:  desaturate(lighten($purple-light, $hoverBackgroundLighten), $hoverDesaturateBack)
+          .schedule-title h3                                  
+            color: saturate(darken($purple-light, $hoverDarkenFont), $hoverSaturateFont)
+            text-shadow: $hoverTextShadow                                    
       p
         font-size: 15px
         line-height: 1em
@@ -276,28 +283,31 @@ header
       cursor: pointer
       border-left: 5px solid $creme
       padding: 15px 20px 15px 10px
-      transition: all $hoverReactSpeed linear                                    
+      transition: all $hoverReactSpeed ease                                    
       &.schedule-room1
         border-left-color: $purple-dark
         &:hover
           border-left-color: saturate($purple-dark, $hoverSaturate)
-          background-color:  lighten($purple-dark, $hoverBackgroundLighten)
+          background-color:  desaturate(lighten($purple-dark, $hoverBackgroundLighten), $hoverDesaturateBack)
           .schedule-title h3                                 
-            color: darken($purple-dark, $hoverDarkenFont)                                
+            color: saturate(darken($purple-dark, $hoverDarkenFont), $hoverSaturateFont)
+            text-shadow: $hoverTextShadow                                 
       &.schedule-room2
         border-left-color: $purple-light
         &:hover
           border-left-color: saturate($purple-light, $hoverSaturate)
-          background-color:  lighten($purple-light, $hoverBackgroundLighten)
+          background-color:  desaturate(lighten($purple-light, $hoverBackgroundLighten), $hoverDesaturateBack)
           .schedule-title h3                                
-            color: darken($purple-light, $hoverDarkenFont)                                  
+            color: saturate(darken($purple-light, $hoverDarkenFont), $hoverSaturateFont)
+            text-shadow: $hoverTextShadow                              
       &.schedule-room3
         border-left-color: $orange
         &:hover
           border-left-color: saturate($orange, $hoverSaturate)
-          background-color:  lighten($orange, $hoverBackgroundLighten)
+          background-color:  desaturate(lighten($orange, $hoverBackgroundLighten), $hoverDesaturateBack)
           .schedule-title h3                                  
-            color: darken($orange, $hoverDarkenFont)                                  
+            color: saturate(darken($orange, $hoverDarkenFont), $hoverSaturateFont)
+            text-shadow: $hoverTextShadow                                 
       &.no-modal
         cursor: default
       img, p
