@@ -84,6 +84,9 @@ disqus_shortname:
 theme: thunderplains
 exclude_generator:
 
+stylus:
+  compress: false
+
 # Deployment
 ## Docs: http://hexo.io/docs/deployment.html
 deploy:
