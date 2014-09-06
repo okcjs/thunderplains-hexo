@@ -1,15 +1,15 @@
-$(function() {
+$(function () {
   initializeMap();
 
   // Smooth Scroll
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') || location.hostname == this.hostname) {
+  $('a[href*=#]:not([href=#])').click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
 
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        if (target.length) {
-         $('html,body').animate({
-           scrollTop: target.offset().top
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
         }, 1000);
         return false;
       }
@@ -17,7 +17,7 @@ $(function() {
   });
 
   // Talks Modal
-  $('.schedule-talk:not(".no-modal")').on("click", function() {
+  $('.schedule-talk:not(".no-modal")').on("click", function () {
     $talk = $(this).clone();
     $("#modal-talks").modal();
     $("#modal-talks .modal-body").html($talk);
@@ -54,17 +54,18 @@ function initializeMap() {
     ['Vast', 'food', 35.466517, -97.517615, 1],
     ['Park Avenue Grill', 'food', 35.4678, -97.514171, 1],
   ];
+
   function setMarkers(map, locations) {
     for (var i = 0; i < locations.length; i++) {
       var point = locations[i];
       var icon = 'images/marker-' + point[1] + '.png'
       var pointLatLong = new google.maps.LatLng(point[2], point[3]);
       var marker = new google.maps.Marker({
-          position: pointLatLong,
-          map: map,
-          icon: icon,
-          title: point[0],
-          zIndex: point[4]
+        position: pointLatLong,
+        map: map,
+        icon: icon,
+        title: point[0],
+        zIndex: point[4]
       });
     }
   }
