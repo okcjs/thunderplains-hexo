@@ -221,18 +221,45 @@ section#schedule.container
       .schedule-talk.schedule-room3
         .schedule-title
           img(src="images/speakers/Jeff_French.png", alt="Jeff French")
-          h3 Awesomify Your Development Environment [Docker + Vagrant]
+          h3 Awesomify Your Dev Environment [Docker + Vagrant]
           h4 Jeff French
-        p
-          | But it works on my machine!” Oh, that terrible feeling when the code that runs 
-          | like a champ in your dev environment falls flat on its face in production. 
-          | And you don’t know why. A missing dependency? Permission issue? Wrong version of Node installed? 
-          | Don’t worry, there is a very nice solution to this problem: Make the dev environment match the production environment. 
-          | In this session we’ll take a look at how to run our code in a Docker container to ensure dev and production are identical. 
-          | We’ll start with an introduction to Docker and how it works and move on to running our NodeJS API in a container. 
-          | We’ll also take a look at Vagrant for running and building these Docker containers a development time. 
-          | When you leave this session you have a good understanding of what Docker and Vagrant are, 
-          | how they make your development and production environments better, and how they work together.
+
+
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room3.active 
+            a(role="tab", data-toggle="tab", href="#French-talk") Talk
+          li.nav-room3  
+            a(role="tab", data-toggle="tab", href="#French-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="French-talk")
+            p
+              | But it works on my machine!” Oh, that terrible feeling when the code that runs 
+              | like a champ in your dev environment falls flat on its face in production. 
+              | And you don’t know why.
+              br
+              br
+              | A missing dependency? 
+              br
+              | Permission issue? 
+              br
+              | Wrong version of Node installed?
+              br
+              br
+              | Don’t worry, there is a very nice solution to this problem: Make the dev environment match the production environment. 
+              | In this session we’ll take a look at how to run our code in a Docker container to ensure dev and production are identical. 
+              | We’ll start with an introduction to Docker and how it works and move on to running our NodeJS API in a container. 
+              | We’ll also take a look at Vagrant for running and building these Docker containers a development time. 
+              | When you leave this session you have a good understanding of what Docker and Vagrant are, 
+              | how they make your development and production environments better, and how they work together.
+          div.tab-pane(id="French-bio")
+            p
+              | Jeff French is an experienced developer with a passion for automation, 
+              | software craftsmanship and good craft beer. A mild mannered developer by day and a hopeless technology junky by night. 
+              | He has extensive experience in web and mobile application development, deployment automation, and continuous delivery. 
+              | He constantly strives to learn how new technologies can help solve real world problems. He has been a contributor to 
+              | such open source projects as MVC Turbine, Shoelace-MVC and Octopus Deploy’s OctoPack. Jeff is an international speaker 
+              | at technology conferences giving talks on DevOps, Continuous Delivery, Mobile and Web Development, Javascript frameworks 
+              | and whatever else strikes his interest.
 
     .schedule-time
       time 11:30pm-1:00pm
@@ -251,23 +278,37 @@ section#schedule.container
       .schedule-talk.schedule-room1
         .schedule-title
           img(src="images/speakers/Josh_Bavari.png", alt="Josh Bavari")
-          h3 Mobile Applications with Javascript and Ionic
+          h3 Mobile Applications with JS and Ionic
           h4 Josh Bavari
-        p
-          | Theres two things I am absolutely passionate about:
-          br
-          br
-          | 1) Cordova for mobile applications
-          br
-          | 2) JavaScript
-          br
-          br
-          | Using the Javascript framework Ionic built on top of Cordova, it's
-          | easy to make slick mobile applications built with web technologies.
-          | Ionic is built with several components from AngularJS, is open
-          | source, and has an ever growing user base with forums. Lets embrace
-          | JavaScript and make apps that are capable of running on your mobile
-          | phone through an app or a web browser.
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room1.active 
+            a(role="tab", data-toggle="tab", href="#Bavari-talk") Talk
+          li.nav-room1  
+            a(role="tab", data-toggle="tab", href="#Bavari-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Bavari-talk")
+            p
+              | Theres two things I am absolutely passionate about:
+              br
+              br
+              | 1) Cordova for mobile applications
+              br
+              | 2) JavaScript
+              br
+              br
+              | Using the Javascript framework Ionic built on top of Cordova, it's
+              | easy to make slick mobile applications built with web technologies.
+              | Ionic is built with several components from AngularJS, is open
+              | source, and has an ever growing user base with forums. Lets embrace
+              | JavaScript and make apps that are capable of running on your mobile
+              | phone through an app or a web browser.
+          div.tab-pane(id="Bavari-bio")
+            p
+              | Ever since plugging in to a computer at a young age, Josh has been passionate about learning 
+              | technology and helping others learn. Since 2006, Josh has worked in a variety of business settings 
+              | ranging from start ups, medium size businesses, and on to the enterprise level. Currently Josh works for a local start up, 
+              | RaiseMore, where he is focused on building a platform using technologies such as Ruby, Rails, Javascript, HTML5, and PhoneGap.
+          
       .schedule-talk.schedule-room2
         .schedule-title
           img(src="images/speakers/Jennifer_Wadella.png", alt="Jennifer Wadella")
