@@ -597,23 +597,32 @@ section#schedule.container
           img(src="images/speakers/Chris_Williams.png", alt="Chris Williams [Vodoo Tiki God]")
           h3 Democratizing Hardware
           h4 Chris Williams
-        p
-          | With the rise of widely available chipsets, open source hardware
-          | components, and makerspaces, the only thing holding back the coming
-          | Hardware Revolution is... the arcane languages needed to program
-          | them. While most of the development industry has pushed forward into
-          | far more accessible and expressive languages, the domain of hardware
-          | has been stuck in the 1980's. With the rise of NodeBots, which
-          | started as node.js robots but is now inclusive of all languages, the
-          | trend toward making hardware hacking accessible to all has grown
-          | stronger and broader. 
-          br
-          br
-          | As a gatekeeper between the two worlds, due to being the author of
-          | node-serialport, I have been witness to this amazing trend and would like to
-          | invite you to join us as we bring robots, copters, boats, and rockets, but most
-          | importantly the maker movement to all software and web developers.
-
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room1.active 
+            a(role="tab", data-toggle="tab", href="#Williams-talk") Talk
+          li.nav-room1  
+            a(role="tab", data-toggle="tab", href="#Williams-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Williams-talk")
+            p
+              | With the rise of widely available chipsets, open source hardware
+              | components, and makerspaces, the only thing holding back the coming
+              | Hardware Revolution is... the arcane languages needed to program
+              | them. While most of the development industry has pushed forward into
+              | far more accessible and expressive languages, the domain of hardware
+              | has been stuck in the 1980's. With the rise of NodeBots, which
+              | started as node.js robots but is now inclusive of all languages, the
+              | trend toward making hardware hacking accessible to all has grown
+              | stronger and broader. 
+              br
+              br
+              | As a gatekeeper between the two worlds, due to being the author of
+              | node-serialport, I have been witness to this amazing trend and would like to
+              | invite you to join us as we bring robots, copters, boats, and rockets, but most
+              | importantly the maker movement to all software and web developers.
+          div.tab-pane(id="Williams-bio")
+            p
+              | Maker of Improbable Things. VoodooSpark, node-serialport, nodebots, nodecopter, JSConf, RobotsConf, saferaging, beerjs, and more.
     .schedule-time
       time 5:30pm-6:00pm
     .schedule-event
