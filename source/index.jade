@@ -438,22 +438,35 @@ section#schedule.container
           img(src="images/speakers/Jeremy_Green.png", alt="Jeremy Green")
           h3 Supercharge Your Productivity with Ember.js
           h4 Jeremy Green
-        p
-          | Ember is an opinionated application framework.  Like many
-          | opinionated frameworks things get much easier when you learn what
-          | those opinions are, and why they are in place. This session will
-          | bring you up to speed on the concepts represented by all of the major
-          | parts of the framework, and you'll be well on your way to quickly
-          | delivering highly interactive applications.
-          br
-          br
-          | MVC is a popular pattern used in both server side and client side frameworks.
-          | Unfortunately due to the differences in focus, some of the common words and
-          | phrases can become overloaded and confused.  This session will dive into the
-          | specific parts of server and client side MVC patterns, comparing and
-          | contrasting each part of the system.  Code examples will be in Ruby on Rails
-          | for the server, and Ember.js for the client, but the concepts will be broadly
-          | applicable to other languages.
+         ul.nav.nav-tabs(role="tablist")
+          li.nav-room2.active 
+            a(role="tab", data-toggle="tab", href="#Green-talk") Talk
+          li.nav-room2  
+            a(role="tab", data-toggle="tab", href="#Green-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Green-talk")
+            p
+              | Ember is an opinionated application framework.  Like many
+              | opinionated frameworks things get much easier when you learn what
+              | those opinions are, and why they are in place. This session will
+              | bring you up to speed on the concepts represented by all of the major
+              | parts of the framework, and you'll be well on your way to quickly
+              | delivering highly interactive applications.
+              br
+              br
+              | MVC is a popular pattern used in both server side and client side frameworks.
+              | Unfortunately due to the differences in focus, some of the common words and
+              | phrases can become overloaded and confused.  This session will dive into the
+              | specific parts of server and client side MVC patterns, comparing and
+              | contrasting each part of the system.  Code examples will be in Ruby on Rails
+              | for the server, and Ember.js for the client, but the concepts will be broadly
+              | applicable to other languages.
+          div.tab-pane(id="Green-bio")
+            p
+              | Jeremy is a full stack engineer who has been creating web apps for over 15 years. 
+              | He's an organizer of the OkcRuby developer group and an active open source contributor. 
+              | You might also find him drumming, shooting photos, or brewing.        
+ 
       .schedule-talk.schedule-room3
         .schedule-title
           img(src="images/speakers/Chris_Dickinson.png", alt="Chris Dickinson")
