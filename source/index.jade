@@ -197,14 +197,27 @@ section#schedule.container
           img(src="images/speakers/Jenn_Schiffer.png", alt="Jenn Schiffer")
           h3 Your Grandparents Probably Didn't Have Node
           h4 Jenn Schiffer
-        p
-          | Using build tools and public git repositories allow developers to
-          | create for and distribute our work to...other developers. But what
-          | about artists and writers and other non-developers who don't know how
-          | to open terminal, let alone run `npm install`? I'm going to talk
-          | about how I entered this problem space by building a drawing app and
-          | learning how to document and distribute code in a way that people of
-          | all technical and non-technical backgrounds can enjoy it.
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room2.active 
+            a(role="tab", data-toggle="tab", href="#Schiffer-talk") Talk
+          li.nav-room2  
+            a(role="tab", data-toggle="tab", href="#Schiffer-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Schiffer-talk")
+            p
+              | Using build tools and public git repositories allow developers to
+              | create for and distribute our work to...other developers. But what
+              | about artists and writers and other non-developers who don't know how
+              | to open terminal, let alone run `npm install`? I'm going to talk
+              | about how I entered this problem space by building a drawing app and
+              | learning how to document and distribute code in a way that people of
+              | all technical and non-technical backgrounds can enjoy it.
+          div.tab-pane(id="Schiffer-bio")
+            p
+              | Jenn Schiffer is an engineer at Bocoup and creator of make8bitart.com. 
+              | She enjoys humor and art immensely, as well as working her love of programming, 
+              | computer science, and the open web into those hobbies.        
+          
       .schedule-talk.schedule-room3
         .schedule-title
           img(src="images/speakers/Jeff_French.png", alt="Jeff French")
