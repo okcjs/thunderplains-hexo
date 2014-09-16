@@ -174,10 +174,24 @@ section#schedule.container
           img(src="images/speakers/Waylon_Flinn.png", alt="Waylon Flinn")
           h3 Making Magic with Node.js and Redis
           h4 Waylon Flinn
-        p
-          | Ever wanted to make a game? How about a recommendation engine? Come
-          | hear how Crunch Magic mixed Node.js and Redis into a potion that does
-          | both.
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room1.active 
+            a(role="tab", data-toggle="tab", href="#Flinn-talk") Talk
+          li.nav-room1  
+            a(role="tab", data-toggle="tab", href="#Flinn-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Flinn-talk")
+            p
+              | Ever wanted to make a game? How about a recommendation engine? Come
+              | hear how Crunch Magic mixed Node.js and Redis into a potion that does
+              | both.
+          div.tab-pane(id="Flinn-bio")
+            p
+              | Waylon started out in a town with not so much as a calculus class anywhere in a 50 mile radius and began teaching 
+              | himself to program when he was 11. He eventually got degrees in Physics and Math and wrote the software they use 
+              | to test astronauts on the International Space Station. The first game he ever loved was Final Fantasy on the NES. 
+              | Now he thinks games are the future of the world and he's dedicated his life to making life more fun  
+          
       .schedule-talk.schedule-room2
         .schedule-title
           img(src="images/speakers/Jenn_Schiffer.png", alt="Jenn Schiffer")
