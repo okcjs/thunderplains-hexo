@@ -143,18 +143,29 @@ section#schedule.container
           img(src="images/speakers/Gordon_Bockus.png", alt="Gordon Bockus")
           h3 Building Massive Angular Apps
           h4 Gordon Bockus
-        p
-          | I will be describing in detail why organizing and preparing your
-          | team and project for when it gets large is an obvious win over the
-          | lifetime of a web application. Specifically talking about how
-          | spending some time and effort considering the long term implications
-          | of up front design and tooling decisions will result in a better
-          | organized and easily maintained project as it gets MASSIVE!  I'll go
-          | into detail about tools, processes, can best practices that will help
-          | make the project scalable and maintainable.  There will be a section
-          | that is specific to Angular applications taking about 1/3 of the
-          | available time.
-
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room3.active 
+            a(role="tab", data-toggle="tab", href="#Bockus-talk") Talk
+          li.nav-room3  
+            a(role="tab", data-toggle="tab", href="#Bockus-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Bockus-talk")
+            p
+              | I will be describing in detail why organizing and preparing your
+              | team and project for when it gets large is an obvious win over the
+              | lifetime of a web application. Specifically talking about how
+              | spending some time and effort considering the long term implications
+              | of up front design and tooling decisions will result in a better
+              | organized and easily maintained project as it gets MASSIVE!  I'll go
+              | into detail about tools, processes, can best practices that will help
+              | make the project scalable and maintainable.  There will be a section
+              | that is specific to Angular applications taking about 1/3 of the
+              | available time.
+          div.tab-pane(id="Bockus-bio")
+            p
+              | I'm a full stack software engineer with a focus on client side technology. 
+              | //
+              | Senior Software Engineer at Spanning Cloud Apps
     .schedule-time
       time 10:30am-11:20am
     .schedule-slot
