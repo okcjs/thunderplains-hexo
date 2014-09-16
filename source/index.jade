@@ -314,17 +314,34 @@ section#schedule.container
           img(src="images/speakers/Jennifer_Wadella.png", alt="Jennifer Wadella")
           h3 The Importance of Building Developer Communities
           h4 Jennifer Wadella
-        p
-          | Today, companies are competing for technology talent more than for
-          | business. As a developer, you have more power than you may realize.
-          | You have the power to shape our technology landscape and build the
-          | kind of companies for which you want to work (and not just by
-          | founding them). Google doesn’t hold the monopoly on developer culture
-          | nor does Silicon Valley hold the monopoly on job opportunities in
-          | innovation. Learn how as a developer at any level of the corporate
-          | ladder you can make an impact in your company, and Kansas City,
-          | through building developer communities.
 
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room2.active 
+            a(role="tab", data-toggle="tab", href="#Wadella-talk") Talk
+          li.nav-room2  
+            a(role="tab", data-toggle="tab", href="#Wadella-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Wadella-talk")
+            p
+              | Today, companies are competing for technology talent more than for
+              | business. As a developer, you have more power than you may realize.
+              | You have the power to shape our technology landscape and build the
+              | kind of companies for which you want to work (and not just by
+              | founding them). Google doesn’t hold the monopoly on developer culture
+              | nor does Silicon Valley hold the monopoly on job opportunities in
+              | innovation. Learn how as a developer at any level of the corporate
+              | ladder you can make an impact in your company, and Kansas City,
+              | through building developer communities.
+          div.tab-pane(id="Wadella-bio")
+            p
+              | Jennifer Wadella has been writing code since before she realized it was a credible career path. 
+              | She currently works as a web developer at MindMixer and loves building javascript applications and 
+              | attending hackathons. She is an active member of the KC tech community and the founder of Kansas City 
+              | Women in Technology(KCWiT), a non-profit aimed at growing the number of women in technology careers in 
+              | Kansas City. She founded and organizes CoderDojoKC, a program that brings mentors in to teach kids how to 
+              | code, and is a Tech sHeroes mentor, sits on the Shawnee Mission School District CTE Advisory board, is a 
+              | committee member of the KC Girls in STEM initiative, and is on the JCCC Young Women in STEM Conference planning 
+              | committee. She doesn't blog, but she can handle 140 characters
       .schedule-talk.schedule-room3
         .schedule-title
           img(src="images/speakers/Derick_Bailey.png", alt="Derick Bailey")
