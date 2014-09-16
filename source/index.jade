@@ -472,16 +472,28 @@ section#schedule.container
           img(src="images/speakers/Chris_Dickinson.png", alt="Chris Dickinson")
           h3 Better Living through Control Flow Graph Generation
           h4 Chris Dickinson
-        p
-          | This talk will be an introduction to the data structures and phases
-          | involved in parsing (tokenization, abstract syntax trees, control
-          | flow graph generation), and what useful tools can be built on the
-          | various derived formats of your code. The overarching theme is that
-          | dealing with your code on a different level of abstraction gives you
-          | superpowers. This talk will include information about control flow
-          | graphs + doing code review, static analysis, and optimization with
-          | that intermediate format.
 
+         ul.nav.nav-tabs(role="tablist")
+          li.nav-room3.active 
+            a(role="tab", data-toggle="tab", href="#Dickinson-talk") Talk
+          li.nav-room3  
+            a(role="tab", data-toggle="tab", href="#Dickinson-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Dickinson-talk")
+            p
+              | This talk will be an introduction to the data structures and phases
+              | involved in parsing (tokenization, abstract syntax trees, control
+              | flow graph generation), and what useful tools can be built on the
+              | various derived formats of your code. The overarching theme is that
+              | dealing with your code on a different level of abstraction gives you
+              | superpowers. This talk will include information about control flow
+              | graphs + doing code review, static analysis, and optimization with
+              | that intermediate format.
+          div.tab-pane(id="Dickinson-bio")
+            p
+              | Chris is a software engineer at Walmart Labs in Portland Oregon.
+              br
+              a(href="http://neversaw.us/")neversaw.us
     .schedule-time
       time 3:00pm-3:30pm
     .schedule-event
