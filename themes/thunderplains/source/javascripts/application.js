@@ -1,6 +1,20 @@
 $(function () {
   initializeMap();
+  initModals();
+  initTabs();
+  initSmoothScroll();
+  initRoomColumnHover();
+});
 
+
+function initTabs() {
+
+
+
+
+}
+
+function initSmoothScroll() {
   // Smooth Scroll
   $('a[href*=#]:not([href=#])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
@@ -16,14 +30,46 @@ $(function () {
     }
   });
 
-  // Talks Modal
-  $('.schedule-talk:not(".no-modal")').on("click", function () {
-    $talk = $(this).clone();
-    $("#modal-talks").modal();
-    $("#modal-talks .modal-body").html($talk);
-  });
+}
 
-});
+function initModals() {
+  function deployModal() {
+
+    function toggleTab(e) {
+      e.preventDefault();
+
+      $modal
+        .find('.tab-pane')
+        .hide()
+        .end()
+        .find('.nav-tabs li')
+        .removeClass('active');
+
+      $(this)
+        .parent()
+        .addClass('active');
+
+      $modal
+        .find($(this).attr('href'))
+        .slideDown();
+    }
+
+    var $talk = $(this).clone(),
+      $modal = $('#modal-talks');
+
+    $modal
+      .modal();
+
+    $modal
+      .find('.modal-body')
+      .html($talk);
+
+    $modal
+      .find('.nav-tabs a')
+      .click(toggleTab);
+  }
+  $('.schedule-talk:not(".no-modal")').on("click", deployModal);
+}
 
 // Map
 function initializeMap() {
@@ -73,20 +119,14 @@ function initializeMap() {
 }
 
 
-
-$(function enhanceSchedule() {
-
+function initRoomColumnHover() {
   function attachHandlers(room) {
-    console.log(room)
 
     var sroom = '.schedule-' + room,
       legend = '.legend-' + room,
       $room = $(sroom),
       $legend = $(legend);
-    
-    
-  
-    
+
     function lightColumn() {
       $legend.addClass('hover');
       $room.addClass('hover');
@@ -107,5 +147,4 @@ $(function enhanceSchedule() {
   for (var i = 0, ii = rooms.length; i < ii; i++) {
     attachHandlers(rooms[i]);
   }
-
-});
+}
