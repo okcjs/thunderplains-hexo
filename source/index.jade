@@ -118,10 +118,26 @@ section#schedule.container
           img(src="images/speakers/Eric_Schoftstall.png", alt="Eric Schoftstall")
           h3 Genome.js
           h4 Eric Schoffstall
-        p
-          | Genetics: the final frontier. What is the link between the human genome and Javascript? Do you want to find out why your body does that weird           
-          | thing? In this talk we will unravel the mystery surrounding your source code, and explore using Javascript to make sense of it. Included with           
-          | your ticket is a copy of my genome which you may use to make clones.
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room2.active 
+            a(role="tab", data-toggle="tab", href="#Schoftstall-talk") Talk
+          li.nav-room2  
+            a(role="tab", data-toggle="tab", href="#Schoftstall-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Schoftstall-talk")
+             p
+              | Genetics: the final frontier. What is the link between the human genome and Javascript? Do you want to find out why your body does that weird    
+              | thing? In this talk we will unravel the mystery surrounding your source code, and explore using Javascript to make sense of it. Included with    
+              | your ticket is a copy of my genome which you may use to make clones.
+          div.tab-pane(id="Schoftstall-bio")
+            p
+              | Enthusiast of everything. Experiencing life through code. 
+              br
+              | //
+              br
+              | Co-founder @wearefractal   
+          
+          
       .schedule-talk.schedule-room3
         .schedule-title
           img(src="images/speakers/Gordon_Bockus.png", alt="Gordon Bockus")
