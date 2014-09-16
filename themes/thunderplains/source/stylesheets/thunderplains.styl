@@ -213,12 +213,21 @@ header
         width: 1em
         vertical-align: middle
         margin: (-0.2em) 0.5em 0 0
-      &.legend-room1:before
-        background: $purple-dark
-      &.legend-room2:before
-        background: $purple-light
-      &.legend-room3:before
-        background: $orange
+      &.legend-room1
+        &:before
+          background: $purple-dark
+        &:hover:before   
+          background: saturate($purple-dark, $hoverSaturate)                         
+      &.legend-room2
+        &:before
+          background: $purple-light
+        &:hover:before   
+          background: saturate($purple-light, $hoverSaturate)                                        
+      &.legend-room3
+        &:before
+          background: $orange
+        &:hover:before
+          background: saturate($orange, $hoverSaturate)                                     
   .schedule-list
     @extend .list-simple
     border: 1px solid $creme
@@ -286,7 +295,8 @@ header
       transition: all $hoverReactSpeed ease                                    
       &.schedule-room1
         border-left-color: $purple-dark
-        &:hover
+        &:hover 
+        &.hover
           border-left-color: saturate($purple-dark, $hoverSaturate)
           background-color:  desaturate(lighten($purple-dark, $hoverBackgroundLighten), $hoverDesaturateBack)
           .schedule-title h3                                 
@@ -294,7 +304,8 @@ header
             text-shadow: $hoverTextShadow                                 
       &.schedule-room2
         border-left-color: $purple-light
-        &:hover
+        &:hover 
+        &.hover
           border-left-color: saturate($purple-light, $hoverSaturate)
           background-color:  desaturate(lighten($purple-light, $hoverBackgroundLighten), $hoverDesaturateBack)
           .schedule-title h3                                
@@ -302,7 +313,8 @@ header
             text-shadow: $hoverTextShadow                              
       &.schedule-room3
         border-left-color: $orange
-        &:hover
+        &:hover 
+        &.hover
           border-left-color: saturate($orange, $hoverSaturate)
           background-color:  desaturate(lighten($orange, $hoverBackgroundLighten), $hoverDesaturateBack)
           .schedule-title h3                                  

@@ -38,7 +38,7 @@ function initializeMap() {
     scaleControl: false,
     streetViewControl: false,
     overviewMapControl: false
-  }
+  };
   var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
   //Markers
@@ -71,3 +71,41 @@ function initializeMap() {
   }
   setMarkers(map, markerPoints);
 }
+
+
+
+$(function enhanceSchedule() {
+
+  function attachHandlers(room) {
+    console.log(room)
+
+    var sroom = '.schedule-' + room,
+      legend = '.legend-' + room,
+      $room = $(sroom),
+      $legend = $(legend);
+    
+    
+  
+    
+    function lightColumn() {
+      $legend.addClass('hover');
+      $room.addClass('hover');
+    }
+
+    function darkColumn() {
+      $legend.addClass('hover');
+      $room.removeClass('hover');
+    }
+
+    $legend
+      .on('mouseenter', lightColumn)
+      .on('mouseleave', darkColumn);
+  }
+
+  var rooms = ['room1', 'room2', 'room3'];
+
+  for (var i = 0, ii = rooms.length; i < ii; i++) {
+    attachHandlers(rooms[i]);
+  }
+
+});
