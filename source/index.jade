@@ -56,16 +56,32 @@ section#schedule.container
       .schedule-talk
         .schedule-title
           img(src="images/speakers/Luke_Crouch.png", alt="Luke Crouch")
-          h3
-            | Web For America
+          h3 Web For America
           h4 Luke Crouch
-        p
-          | The web enables us to make software that reaches and connects
-          | everyone. But the best minds of our generation are thinking about how
-          | to make people click ads. That sucks. Are we working on the right
-          | things? This talk tells the story of the Code for Tulsa brigade, and
-          | why you can use web development to make your city, our state, and
-          | maybe our world a better place.
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room1.active 
+            a(role="tab", data-toggle="tab", href="#crouch-talk") Talk
+          li.nav-room1  
+            a(role="tab", data-toggle="tab", href="#crouch-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="crouch-talk")
+            p
+              | The web enables us to make software that reaches and connects
+              | everyone. But the best minds of our generation are thinking about how
+              | to make people click ads. That sucks. Are we working on the right
+              | things? This talk tells the story of the Code for Tulsa brigade, and
+              | why you can use web development to make your city, our state, and
+              | maybe our world a better place.
+          div.tab-pane(id="crouch-bio")
+            p
+              | I write web code and help manage web development for Mozilla Developer Network.
+              | I organize some local tech communities. Tulsa Web Devs' mission is to make Tulsa on of the greatest cities in the world for web developers. 
+              | Code for Tulsa is a Code for America Brigade. 
+              | I owe all my best experiences to the open-source community and try to give back.
+              | I'm also currently working on an open-source startup - codesy.io.
+              | I brew my own beer, when I have time. I also help monks brew beer at a nearby Abbey once a month. 
+              | I do Sprint-distance Triathlons.
+              | I'm a fan of Liverpool Reds and Oklahoma City Thunder.
 
     .schedule-time
       time 9:30am-10:20am
@@ -75,11 +91,30 @@ section#schedule.container
           img(src="images/speakers/Aaron_Murray.png", alt="Aaron Murray")
           h3 Real World React.js
           h4 Aaron Murray
-        p
-          | React.js brings significant benefits to front-end development: performant virtual DOM diff, one-way data flow and a great component system.             
-          | React, however, is just the "V" in MVC, so the question of how to actually architect your application quickly arises. In this talk we will             
-          | explore using React to build full apps including complementary libs, tooling, pain points and more. We will touch on the flux pattern and               
-          | our React-based MV* implementation.
+       ul.nav.nav-tabs(role="tablist")
+          li.nav-room1.active 
+            a(role="tab", data-toggle="tab", href="#murray-talk") Talk
+          li.nav-room1  
+            a(role="tab", data-toggle="tab", href="#murray-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="murray-talk")
+            p
+              | React.js brings significant benefits to front-end development: performant virtual DOM diff, one-way data flow and a great component system.      
+              | React, however, is just the "V" in MVC, so the question of how to actually architect your application quickly arises. In this talk we will
+              | explore using React to build full apps including complementary libs, tooling, pain points and more. We will touch on the flux pattern and        
+              | our React-based MV* implementation.
+          div.tab-pane(id="murray-bio")
+            p
+              | I write web code and help manage web development for Mozilla Developer Network.
+              | I organize some local tech communities. Tulsa Web Devs' mission is to make Tulsa on of the greatest cities in the world for web developers. 
+              | Code for Tulsa is a Code for America Brigade. 
+              | I owe all my best experiences to the open-source community and try to give back.
+              | I'm also currently working on an open-source startup - codesy.io.
+              | I brew my own beer, when I have time. I also help monks brew beer at a nearby Abbey once a month. 
+              | I do Sprint-distance Triathlons.
+              | I'm a fan of Liverpool Reds and Oklahoma City Thunder.    
+          
+          
       .schedule-talk.schedule-room2
         .schedule-title
           img(src="images/speakers/Eric_Schoftstall.png", alt="Eric Schoftstall")

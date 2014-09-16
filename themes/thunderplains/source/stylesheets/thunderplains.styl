@@ -322,7 +322,7 @@ header
             text-shadow: $hoverTextShadow                                 
       &.no-modal
         cursor: default
-      img, p
+      img, ul, p
         display: none
     @media only screen and (min-width: $break-medium)
       .schedule-slot
@@ -341,10 +341,12 @@ header
       color: $green-light
       font-weight: 300
       margin-bottom: 0
+  
+  .nav-tabs
+    margin-top: -28px;                                        
   p
     clear: both
     margin-top: 10px
-    border-top: 3px double #eeeeee
     padding-top: 10px
     font-size: 18px
     line-height: 1.35em
@@ -353,15 +355,15 @@ header
     position: absolute
     z-index: 2
     top: 0
-    left: 0
+    right: 8px
     width: 200px
     height: 200px                                        
   .schedule-talk
     position: relative
     z-index: 1
     .schedule-title
-      padding-left: 210px
       min-height: 200px
+      padding-right: 210px                                      
       h3
         font-size: 34px
       h4
