@@ -529,33 +529,64 @@ section#schedule.container
           img(src="images/speakers/Jordan_Rousseau.png", alt="Jordan Rousseau")
           h3 So tell me again why we're not using node.js?
           h4 Jordan Rousseau
-        p
-          | Two years ago at WDT, the technology solution for any web
-          | application was LAMP. My breaking point was us investigating Zend PHP
-          | to expand our application capabilities. I was over it, we knew
-          | JavaScript and there was a great new (but a bit unstable) platform
-          | out that was starting to make some noise. It was time to make a
-          | change.
-          br
-          br
-          | I went through struggles with management, other developers and most definitely
-          | myself on whether or not node.js was the right technology (spoiler alert, it
-          | might not be).
-          br
-          br
-          | I want to share my experiences and tips on how to make the decision if node is
-          | right for your company and how to convince others (and especially yourself)
-          | that node will work and it's not really going out on a limb.
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room2.active 
+            a(role="tab", data-toggle="tab", href="#Rousseau-talk") Talk
+          li.nav-room2  
+            a(role="tab", data-toggle="tab", href="#Rousseau-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Rousseau-talk")
+            p
+              | Two years ago at WDT, the technology solution for any web
+              | application was LAMP. My breaking point was us investigating Zend PHP
+              | to expand our application capabilities. I was over it, we knew
+              | JavaScript and there was a great new (but a bit unstable) platform
+              | out that was starting to make some noise. It was time to make a
+              | change.
+              br
+              br
+              | I went through struggles with management, other developers and most definitely
+              | myself on whether or not node.js was the right technology (spoiler alert, it
+              | might not be).
+              br
+              br
+              | I want to share my experiences and tips on how to make the decision if node is
+              | right for your company and how to convince others (and especially yourself)
+              | that node will work and it's not really going out on a limb.
+          div.tab-pane(id="Rousseau-bio")
+            p
+              | Jordan Rousseau works at Weather Decision technologies, where he practices javascript wizardry.
+  
       .schedule-talk.schedule-room3
         .schedule-title
           img(src="images/speakers/Adam_Baldwin.png", alt="Adam Baldwin")
           h3 Node.js Security Live
           h4 Adam Baldwin
-        p
-          | For years developers have been told to think about and bake security into their apps while they code for various reasons.
-          | This talk will explore this old adage and see just how it might play out, live.
-          | As a web application is built we will explore when is the right time to think about security controls like authentication, authorization,               
-          | security headers and many more and what can happen if those are ignored.
+        ul.nav.nav-tabs(role="tablist")
+          li.nav-room3.active 
+            a(role="tab", data-toggle="tab", href="#Baldwin-talk") Talk
+          li.nav-room3  
+            a(role="tab", data-toggle="tab", href="#Baldwin-bio") Bio
+        div.tab-content
+          div.tab-pane.active(id="Baldwin-talk")
+            p
+              | For years developers have been told to think about and bake security into their apps while they code for various reasons.
+              | This talk will explore this old adage and see just how it might play out, live.
+              | As a web application is built we will explore when is the right time to think about security controls like authentication, authorization,               
+              | security headers and many more and what can happen if those are ignored.
+          div.tab-pane(id="Baldwin-bio")
+            p
+              | The BBS owner, having discovered that some kid had brute-forced his passwords for funsies, declined to press charges against Adam, 
+              | and instead did the next best thing: offered him a job. Under that long-ago sensei’s tutelage, Adam learned the ways of hacking and of
+              | reverse engineering, awakening a love for breaking things.
+              br
+              br
+              | Adam is adept in assessing and securing Node.js, Ruby on Rails, Django, and PHP web apps, as well as providing expertise on secure 
+              | application design and performing penetration testing at key project points prior to and after launch.
+              br
+              br
+              | When he’s not experiencing the beauty of winning, Adam is spending time with his equally lovely family and giving speeches on web security 
+              | at like all the conferences ever.
 
     .schedule-time
       time 4:30pm-5:20pm
