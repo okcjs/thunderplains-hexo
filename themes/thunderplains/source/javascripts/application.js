@@ -89,9 +89,9 @@ function initializeMap() {
 
   //Markers
   var markerPoints = [
-    ['Thunder Plains', 'thunderplains', 35.464613, -97.514815, 1],
-    ['Sheraton', 'hotel', 35.46665, -97.5152], 1,
-    ['Renaissance', 'hotel', 35.466715, -97.514096, 2],
+    ['Thunder Plains', 'thunderplains', 35.464613, -97.514815, 2],
+    ['Sheraton', 'hotel', 35.46665, -97.5152, 1],
+    ['Renaissance', 'hotel', 35.466715, -97.514096, 1],
     ['The Skirvin', 'hotel', 35.46875, -97.514160, 1],
     ['Hampton Inn and Suites', 'hotel', 35.4662, -97.50755, 1],
     ['Colcord', 'hotel', 35.466723, -97.516944, 1],
@@ -102,17 +102,18 @@ function initializeMap() {
   ];
 
   function setMarkers(map, locations) {
-    for (var i = 0; i < locations.length; i++) {
+    for (var i = 0, ii = locations.length; i < ii; i++) {
       var point = locations[i];
       var icon = 'images/marker-' + point[1] + '.png'
       var pointLatLong = new google.maps.LatLng(point[2], point[3]);
-      var marker = new google.maps.Marker({
+      var _marker = {
         position: pointLatLong,
         map: map,
         icon: icon,
         title: point[0],
         zIndex: point[4]
-      });
+      };
+      var marker = new google.maps.Marker(_marker);
     }
   }
   setMarkers(map, markerPoints);
