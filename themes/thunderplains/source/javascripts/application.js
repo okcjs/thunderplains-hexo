@@ -113,9 +113,6 @@ function initializeMap() {
         title: point[0],
         zIndex: point[4]
       };
-
-      console.log('_marker', _marker, _marker.icon)
-
       var marker = new google.maps.Marker(_marker);
     }
   }
